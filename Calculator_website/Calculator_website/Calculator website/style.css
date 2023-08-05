@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    --button-width: 50px;
+    --button-height: 50px;
+
+    --button-colour: hsla(0, 0%, 0%, 0.179);
+    
+    font-family: 'Roboto';
+    font-size: x-large;
+}
+
+body{
+    display: flex;
+    
+    width: 100vw;
+    height: 100vh;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator{
+    display: flex;
+    flex-direction: column;
+
+    width: 500px;
+}
+
+.screen{
+    height: var(--button-width);
+
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    
+    width: 100%;
+    vertical-align: middle;
+    line-height: var(--button-height);
+
+    background-color: var(--button-colour);
+}
+
+.numbers{
+    width: 1000px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    background-color: hsla(0, 0%, 0%, 0.096);
+}
+
+.button{
+    padding: 16px;    
+    margin: 16px;
+
+    width: var(--button-width);
+    height: var(--button-height);
+
+    background-color: var(--button-colour);
+
+    text-align: center;
+    vertical-align: middle;
+    line-height: var(--button-height);
+
+    transition: all 100ms;
+}
+
+.button:hover{
+    background-image: linear-gradient(rgb(0 0 0/ 40%) 0 0);
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+}
+
+.operations{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+}
+
+.operation{
+    font-weight: bold;
+    background-color: orange;
+}
